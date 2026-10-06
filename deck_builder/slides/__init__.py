@@ -1,3 +1,0 @@
-"""
-Slide builders package
-"""

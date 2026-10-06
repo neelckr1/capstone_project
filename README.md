@@ -18,20 +18,8 @@ The framework continuously stress-tests boundaries using an asynchronous **Digit
 ├── README.md                                   # Project overview
 ├── AGENTS.md                                   # Workspace rules & git collaborative sync protocol
 ├── vision.md                                   # Comprehensive vision document & technical architecture
-├── AegisMAS_Capstone_Proposal.pptx             # Generated capstone presentation deck
-├── deck_builder/                               # Modular presentation generation package (TDD)
-│   ├── config.py                               # Color constants, typography & geometry
-│   ├── helpers.py                              # Formatting, card, and shape helpers
-│   ├── builder.py                              # Presentation orchestrator
-│   ├── render.py                               # Keynote & PyMuPDF image renderer
-│   ├── build.py                                # Main runner (build + test + render)
-│   ├── slides/                                 # Modular slide builders (slides 1 to 10)
-│   └── tests/                                  # TDD test suite (13 unit tests)
-│       └── test_deck.py
 ├── ppt/
-│   ├── sample.pptx                             # University capstone presentation template
-│   ├── AegisMAS_Capstone_Proposal.pptx         # Generated proposal presentation
-│   └── renders/                                # High-res PNG slide previews (slides 1 to 10)
+│   └── sample.pptx                             # University capstone presentation template
 ├── reports/
 │   ├── multi_turn_prompt_injection_report.md   # Research report on multi-turn attacks & findings
 │   └── ai_agent_marketplaces_report.md         # Architecture, security & use cases of agent marketplaces
@@ -40,22 +28,6 @@ The framework continuously stress-tests boundaries using an asynchronous **Digit
     ├── OpenAI-Hugging Face Incident-Technical-Report.pdf
     ├── RLredAgent_promptInjection.pdf
     └── civic_shield.pdf
-```
-
----
-
-## Deck Builder & Validation (TDD)
-
-To run the full TDD test suite and re-render all slide previews:
-
-```bash
-python3 -m deck_builder.build
-```
-
-Or run tests directly:
-
-```bash
-python3 -m unittest discover deck_builder/tests
 ```
 
 ---
