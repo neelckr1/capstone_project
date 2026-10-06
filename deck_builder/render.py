@@ -3,6 +3,7 @@ Render module: converts PPTX to PDF via Keynote AppleScript and renders high-res
 """
 import subprocess
 import os
+import time
 import pymupdf
 from deck_builder.config import OUTPUT_PPTX_PATH, RENDERS_DIR
 
@@ -23,29 +24,21 @@ def render_presentation_to_images(pptx_path=OUTPUT_PPTX_PATH, output_dir=RENDERS
     applescript = f'''
     tell application "Keynote"
         activate
+        close every document saving no
         delay 1
-        open POSIX file "{abs_pptx}"
-        delay 2
-        set theDoc to front document
-        export theDoc to POSIX file "{abs_pdf}" as PDF
-        close theDoc saving no
+        with timeout of 60 seconds
+            set theDoc to open POSIX file "{abs_pptx}"
+            delay 2
+            export theDoc to POSIX file "{abs_pdf}" as PDF
+            close theDoc saving no
+        end timeout
+        quit
     end tell
     '''
     
-    # Try up to 2 times with a brief sleep to ensure Keynote IPC readiness
-    success = False
-    last_err = ""
-    import time
-    for attempt in range(2):
-        res = subprocess.run(['osascript', '-e', applescript], capture_output=True, text=True)
-        if res.returncode == 0 and os.path.exists(abs_pdf):
-            success = True
-            break
-        last_err = f"RC={res.returncode}: {res.stderr}\n{res.stdout}"
-        time.sleep(2)
-
-    if not success:
-        raise RuntimeError(f"Keynote export to PDF failed after retries: {last_err}")
+    res = subprocess.run(['osascript', '-e', applescript], capture_output=True, text=True)
+    if res.returncode != 0 or not os.path.exists(abs_pdf):
+        raise RuntimeError(f"Keynote export to PDF failed (RC={res.returncode}): {res.stderr}\n{res.stdout}")
 
     # Now render PDF pages to PNG using PyMuPDF
     doc = pymupdf.open(abs_pdf)

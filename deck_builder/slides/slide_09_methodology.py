@@ -12,7 +12,7 @@ from deck_builder.helpers import (
 )
 
 def build_slide_9(slide):
-    set_slide_title(slide, "Text Box 34", "Proposed Methodology: AegisMAS Defense-in-Depth")
+    set_slide_title(slide, "Text Box 34", "Any other information: Proposed Methodology")
     for shape in slide.shapes:
         if shape.name == "TextBox 4":
             tf = clear_tf(shape)

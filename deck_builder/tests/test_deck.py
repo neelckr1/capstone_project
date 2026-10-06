@@ -39,7 +39,7 @@ class TestAegisMASDeck(unittest.TestCase):
         """Verify Slide 2 outline has 7 numbered agenda items and callout."""
         s2 = self.slides[1]
         title_shape = [s for s in s2.shapes if s.name == "Text Box 34"][0]
-        self.assertEqual(title_shape.text_frame.text.strip(), "Presentation Outline")
+        self.assertEqual(title_shape.text_frame.text.strip(), "Outline")
         
         full_text = " ".join([shape.text_frame.text for shape in s2.shapes if shape.has_text_frame])
         for num in ["01 ›", "02 ›", "03 ›", "04 ›", "05 ›", "06 ›", "07 ›"]:
@@ -65,7 +65,7 @@ class TestAegisMASDeck(unittest.TestCase):
         """Verify Slide 4 scope, challenges, and State-Drift Vector mitigation."""
         s4 = self.slides[3]
         title_shape = [s for s in s4.shapes if s.name == "Text Box 34"][0]
-        self.assertEqual(title_shape.text_frame.text.strip(), "Scope and Feasibility Study")
+        self.assertEqual(title_shape.text_frame.text.strip(), "Scope and Feasibility study")
         
         full_text = " ".join([shape.text_frame.text for shape in s4.shapes if shape.has_text_frame])
         self.assertIn("In-Scope Deliverables", full_text)
@@ -79,7 +79,7 @@ class TestAegisMASDeck(unittest.TestCase):
         """Verify Slide 5 paradigm shift, 4 research citations, and tags."""
         s5 = self.slides[4]
         title_shape = [s for s in s5.shapes if s.name == "Text Box 34"][0]
-        self.assertEqual(title_shape.text_frame.text.strip(), "Background Work & Domain Context")
+        self.assertEqual(title_shape.text_frame.text.strip(), "Background")
         
         full_text = " ".join([shape.text_frame.text for shape in s5.shapes if shape.has_text_frame])
         self.assertIn("Paradigm Shift", full_text)
@@ -97,7 +97,7 @@ class TestAegisMASDeck(unittest.TestCase):
         """Verify Slide 6 enterprise applications and economic justification."""
         s6 = self.slides[5]
         title_shape = [s for s in s6.shapes if s.name == "Text Box 34"][0]
-        self.assertEqual(title_shape.text_frame.text.strip(), "Real-World Applications & Use Cases")
+        self.assertEqual(title_shape.text_frame.text.strip(), "Applications/Use cases")
         
         full_text = " ".join([shape.text_frame.text for shape in s6.shapes if shape.has_text_frame])
         self.assertIn("Enterprise Agent Marketplaces", full_text)
@@ -109,7 +109,7 @@ class TestAegisMASDeck(unittest.TestCase):
         """Verify Slide 7 deliverables across Capstone I, II, III."""
         s7 = self.slides[6]
         title_shape = [s for s in s7.shapes if s.name == "Text Box 34"][0]
-        self.assertEqual(title_shape.text_frame.text.strip(), "Expected Deliverables by Phase")
+        self.assertEqual(title_shape.text_frame.text.strip(), "Expected Deliverables")
         
         full_text = " ".join([shape.text_frame.text for shape in s7.shapes if shape.has_text_frame])
         self.assertIn("Capstone-I", full_text)
@@ -120,7 +120,7 @@ class TestAegisMASDeck(unittest.TestCase):
         """Verify Slide 8 Gantt table geometry and team responsibility rows."""
         s8 = self.slides[7]
         title_shape = [s for s in s8.shapes if s.name == "Text Box 34"][0]
-        self.assertEqual(title_shape.text_frame.text.strip(), "16-Week Project Timeline & Team Effort")
+        self.assertEqual(title_shape.text_frame.text.strip(), "Capstone (Phase-I & Phase-II) Project Timeline")
         
         tables = [s.table for s in s8.shapes if s.has_table]
         self.assertEqual(len(tables), 1, "Slide 8 must contain exactly 1 Gantt table.")
@@ -143,7 +143,7 @@ class TestAegisMASDeck(unittest.TestCase):
         """Verify Slide 9 architecture explanation and visual flow nodes."""
         s9 = self.slides[8]
         title_shape = [s for s in s9.shapes if s.name == "Text Box 34"][0]
-        self.assertEqual(title_shape.text_frame.text.strip(), "Proposed Methodology: AegisMAS Defense-in-Depth")
+        self.assertEqual(title_shape.text_frame.text.strip(), "Any other information: Proposed Methodology")
         
         full_text = " ".join([shape.text_frame.text for shape in s9.shapes if shape.has_text_frame])
         self.assertIn("System-1 Non-Autoregressive Decision Gate", full_text)

@@ -12,7 +12,7 @@ from deck_builder.helpers import (
 )
 
 def build_slide_5(slide):
-    set_slide_title(slide, "Text Box 34", "Background Work & Domain Context")
+    set_slide_title(slide, "Text Box 34", "Background")
     for shape in slide.shapes:
         if shape.name == "TextBox 2":
             clear_tf(shape)  # Clear and hide stale template box

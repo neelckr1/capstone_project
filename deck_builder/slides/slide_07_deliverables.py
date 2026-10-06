@@ -10,7 +10,7 @@ from deck_builder.helpers import (
 )
 
 def build_slide_7(slide):
-    set_slide_title(slide, "Text Box 34", "Expected Deliverables by Phase")
+    set_slide_title(slide, "Text Box 34", "Expected Deliverables")
     for shape in slide.shapes:
         if shape.name == "Content Placeholder 2":
             tf = clear_tf(shape)

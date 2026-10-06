@@ -12,7 +12,7 @@ from deck_builder.helpers import (
 )
 
 def build_slide_8(slide):
-    set_slide_title(slide, "Text Box 34", "16-Week Project Timeline & Team Effort")
+    set_slide_title(slide, "Text Box 34", "Capstone (Phase-I & Phase-II) Project Timeline")
     for shape in slide.shapes:
         if shape.name == "TextBox 4":
             tf = clear_tf(shape)
