@@ -1,9 +1,9 @@
-# AegisMAS: Active Defense-in-Depth Against Mind Viruses in Multi-Agent Systems
+# Adaptive Defense for Multi Agent Systems
 
 ## Overview
-AegisMAS is a capstone research project focused on securing autonomous **Multi-Agent Systems (MAS)** against self-propagating adversarial payloads and goal-subversion attacks (**"Mind Viruses"**). 
+This capstone research project focuses on securing autonomous **Multi-Agent Systems (MAS)** against self-propagating adversarial payloads and goal-subversion attacks (**"Mind Viruses"**). 
 
-By adopting a **Defense-in-Depth** model, AegisMAS integrates high-speed **System-1 non-autoregressive decision models (e.g., Clef, Laya, Jev)** as a low-latency gatekeeper that routes inter-agent traffic into:
+By adopting an **Adaptive Defense-in-Depth** model, the framework integrates high-speed **System-1 non-autoregressive decision models (e.g., Clef, Laya, Jev)** as a low-latency gatekeeper that routes inter-agent traffic into:
 - 🟢 **Green (Nominal):** Low-cost, real-time agent execution (>85% of traffic)
 - 🟡 **Amber (Suspicious / Semantic Drift):** Escalation to **System-2 LLM** deliberative reasoning and sandboxed simulation
 - 🔴 **Red (Critical Hazard / Viral Signature):** Immediate agent quarantine and Human-in-the-Loop (HITL) escalation

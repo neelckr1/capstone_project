@@ -1,4 +1,4 @@
-# Workspace Rules for AegisMAS Capstone
+# Workspace Rules for Adaptive Defense for Multi Agent Systems Capstone
 
 ## Git Collaborative Synchronization Protocol
 This project has multiple collaborators working simultaneously on the same GitHub repository.

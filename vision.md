@@ -1,4 +1,4 @@
-# Vision Document: Defending Against Mind Viruses in Multi-Agent Systems via Adaptive Defense-in-Depth
+# Vision Document: Adaptive Defense for Multi Agent Systems
 
 ---
 
