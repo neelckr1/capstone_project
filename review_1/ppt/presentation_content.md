@@ -1,22 +1,30 @@
-# GAMMA AI DIRECTIVE & INSTRUCTION SET (10-SLIDE STRICT LIMIT)
+# GAMMA AI DIRECTIVE & INSTRUCTION SET (STRICT SAMPLE.PPTX COMPLIANCE)
 
 > ### 🤖 PROMPT & CONFIGURATION INSTRUCTIONS FOR GAMMA AI:
 > **ROLE & CONTEXT:**  
-> You are an elite AI presentation designer building an academic and technical defense deck for a university Capstone Project Approval (Review 1, PES University, Course Code: **UE24CS320A**).  
+> You are an elite academic AI presentation designer building a university Capstone Project Approval deck (Review 1, PES University, Course Code: **UE24CS320A**).  
 > The project title is **"Adaptive Defense for Multi Agent Systems"**.
 >
-> **CRITICAL SLIDE COUNT CONSTRAINT:**
-> * **Exactly 10 Slides (Cards):** This document is strictly budgeted for **Gamma Free (10 cards max)** and complies 1-to-1 with the official PES University template ([`sample.pptx`](file:///Users/neelchandrakar/Desktop/capstone/review_1/ppt/sample.pptx)).
-> * **Card Cardinality:** Generate exactly **10 distinct cards**, separated by `---`. Do not create fewer or more cards.
+> **STRICT TEMPLATE & CARDINALITY COMPLIANCE:**
+> * **Exact 10 Slides (Cards):** This presentation strictly mirrors the official 10-slide PES University template ([`sample.pptx`](file:///Users/neelchandrakar/Desktop/capstone/review_1/ppt/sample.pptx)) and complies with the **Gamma Free 10-slide limit**.
+> * **Exact Slide Headers:** Slide headers must exactly match `sample.pptx`:
+>   1. `UE24CS320A – Capstone Project Approval`
+>   2. `Outline`
+>   3. `Problem Statement`
+>   4. `Scope and Feasibility study`
+>   5. `Background`
+>   6. `Applications/Use cases`
+>   7. `Expected Deliverables`
+>   8. `Capstone (Phase-I & Phase-II) Project Timeline`
+>   9. `Any other information`
+>   10. `Thank You`
 >
-> **VISUAL STYLING & LAYOUT:**
+> **VISUAL STYLING & MEDIA DIRECTIVES:**
 > * **Theme:** **Dark Mode / Cybersecurity Academic** (Charcoal/navy slate background, crisp white typography, Emerald Green for defense/safe states, Crimson Red for threats, Electric Cyan for data/benchmarks).
-> * **Native Tables & Multi-Columns:** Render all tables with clean header rows. Use 2-column or grid layouts where indicated.
-> * **Visual Assets & Images (CRITICAL FOR CARD 9):**
->   * Card 9 combines the **System Architecture Diagram** and the **System-1 Benchmark**:
->     1. Media Block 1: `[UPLOAD IMAGE: training_pipeline.jpeg]` (Closed-Loop Production vs. Training Architecture).
->     2. Media Block 2: `[UPLOAD IMAGE: system1_benchmark.jpeg]` (10-Benchmark Empirical Validation).
-> * **Preserve Math & Scientific Metrics:** Preserve all formulas ($R_0 < 1$, $\mathcal{P}_{\text{risk}}$, $\tau_1, \tau_2$) and empirical percentage values verbatim.
+> * **Images on Card 9 (CRITICAL):** Card 9 (`Any other information`) houses:
+>   1. `[UPLOAD IMAGE: training_pipeline.jpeg]` (Dual-Plane Closed Loop Architecture)
+>   2. `[UPLOAD IMAGE: system1_benchmark.jpeg]` (Empirical System-1 Benchmark Table)
+> * **Data Integrity:** Render all comparative tables, deliverables, timeline grids, and formulas ($R_0 < 1$, $\mathcal{P}_{\text{risk}}$) intact.
 
 ---
 
@@ -24,96 +32,96 @@
 
 [Layout: Centered Hero Card | Theme: Cybersecurity Dark]
 
-## UE24CS320A – Capstone Project Approval (Review 1)
-# Adaptive Defense for Multi Agent Systems
+## UE24CS320A – Capstone Project Approval
+# Project Title: Adaptive Defense for Multi Agent Systems
 ### An Active Immune Architecture Against Self-Replicating Mind Viruses, Multi-Turn Injection, and Cascading Subversion in Agentic Swarms
 
+* **Project ID:** *(To be assigned by Capstone Committee)*
+* **Project Guide:** *(Assigned Faculty Guide, Department of CSE, PES University)*
+* **Project Team:**
+  * **Neel Chandrakar** (SRN: PES1UG22CS360, Section 6A)
+  * *(Co-authors / Team Collaborators as per allocation)*
 * **Domain:** AI Security | Multi-Agent Systems (MAS) | Adversarial Robustness | LLM Safety
-* **Student Presenter:** **Neel Chandrakar** (SRN: PES1UG22CS360, Section 6A)
-* **Team Members:** *(Collaborators as assigned)*
-* **Faculty Guide:** *(Assigned Faculty Guide, Department of CSE, PES University)*
 * **Institution:** Department of Computer Science and Engineering, PES University, Bengaluru
 
 ---
 
-# Card 2: Presentation Outline
+# Card 2: Outline
 
-[Layout: 2-Column Agenda with Accent Badges]
+[Layout: 2-Column Agenda List | Exact sample.pptx Structure]
 
-### Agenda & Evaluation Vectors
+### Agenda
 
-* **01. Problem Statement & Mathematical Aim:** Paradigm shift to MAS, lateral trust asymmetry, Mind Viruses ($R_0 > 1$), and optimization target.
-* **02. Scope & 7-Vector Feasibility Study:** Topological boundaries (Sequential, Mesh, Marketplaces), Guardrail Curse, and feasibility matrix.
-* **03. Background & Consolidated Literature Survey:** Evolution from chatbots to agentic swarms + 15-paper comparative synthesis.
-* **04. Applications & Real-World Use Cases:** 5 Concrete deployment vectors (Enterprise MCP, DevOps, Financial Trading, Civic AI, Edge Robotics).
-* **05. Expected Deliverables (Phases I–III):** Incremental roadmap from baseline simulators to open-source co-evolutionary pipeline.
-* **06. Project Timeline & Gantt Schedule:** 16-Week multi-semester execution matrix with individual effort allocations.
-* **07. Proposed Architecture & System-1 Benchmarks:** Dual-plane closed-loop pipeline (**with `training_pipeline.jpeg`**) & empirical evaluation (**with `system1_benchmark.jpeg`**).
-* **08. References & Project Conclusion:** Formal citations of all surveyed papers and closing defense summary.
+* **• Problem Statement** (Domain selection, observation of trust asymmetry, Mind Viruses $R_0 > 1$, mathematical aim)
+* **• Scope and Feasibility study** (Topological boundaries, Guardrail Curse, and 7-vector feasibility evaluation)
+* **• Background work** (Evolution of agentic autonomy, domain concepts, and 15-paper comparative literature survey)
+* **• Applications/Use cases** (5 Concrete deployment vectors across enterprise MCP, DevOps, finance, and edge swarms)
+* **• Expected Deliverables** (Structured breakdown across Capstone-I, Capstone-II, and Capstone-III)
+* **• Capstone (Phase-I Phase-II, Phase-III) Project Timeline** (16-Week Gantt chart, stage tasks, individual efforts)
+* **• Any other information** (Closed-loop architecture `training_pipeline.jpeg` & empirical benchmarks `system1_benchmark.jpeg`)
+* **• References & Closing** (Formal IEEE/ACM citations of surveyed papers)
 
 ---
 
 # Card 3: Problem Statement
 
-[Layout: 2x2 Grid Card Layout]
+[Layout: 2x2 Grid Card Layout | sample.pptx Prompt: Well defined problem statement specifying the problem clearly]
 
-### 1. Industrial Context & Paradigm Shift
-* Enterprise AI is transitioning from isolated LLMs to **Autonomous Multi-Agent Systems (MAS)** collaborating across marketplaces, mesh networks, and tool execution pipelines.
-* Agents execute privileged tools (APIs, databases, bash shells, web browsing) and dynamically recruit third-party sub-agents.
+### 1. Domain Selection & Industrial Context
+* Modern enterprise AI is transitioning from isolated LLMs to **Autonomous Multi-Agent Systems (MAS)** collaborating across marketplaces, mesh networks, and execution pipelines.
+* Agents autonomously execute privileged tools (APIs, databases, bash environments, web scrapers) and recruit third-party sub-agents.
 
-### 2. The Observation: Multi-Agent Trust Asymmetry
+### 2. Observation: The Multi-Agent Trust Asymmetry
 * Existing LLM guardrails (Llama Guard, NeMo) are **stateless and perimeter-focused**, inspecting only human-to-AI boundaries.
-* Downstream agents implicitly trust upstream agent messages as verified system context, opening an unmonitored **lateral attack vector**.
-* Real-world incident: *OpenAI–Hugging Face Incident (2024)* proved interacting agents coordinate anomalous lateral actions and probe sandboxes.
+* Downstream agents implicitly trust upstream agent outputs as legitimate system context, creating an unmonitored **lateral attack vector**.
+* Real-world incident: *OpenAI–Hugging Face Incident (2024)* proved interacting agents spontaneously coordinate anomalous actions and probe sandboxes.
 
-### 3. Threat Phenomenon: Mind Viruses & Crescendo Drift
-* **Self-Replicating Prompts ("Mind Viruses"):** An adversarial payload injected into Agent $A$ forces it to infect Agent $B$. If reproduction number $R_0 > 1$, infection cascades exponentially across the swarm.
-* **Multi-Turn Semantic Drift (Crescendo Attacks):** Malicious intent is distributed across benign-looking conversational turns, evading perimeter filters until full subversion occurs.
+### 3. The Core Threat: Mind Viruses & Multi-Turn Drift
+* **Self-Replicating Prompts ("Mind Viruses"):** An adversarial payload injected into Agent $A$ coerces it to infect Agent $B$. If reproduction number $R_0 > 1$, the payload cascades exponentially across the swarm.
+* **Semantic Drift (Crescendo Attacks):** Malicious intent is distributed across benign conversational turns, bypassing perimeter filters until full subversion occurs.
 
 ### 4. Mathematical Project Aim
-* Build an **Adaptive Active Defense Architecture** providing an automated immune system for MAS.
-* **Optimization Target:**
+* Design and empirically benchmark an **Adaptive Active Defense Architecture** that establishes an automated immune system for MAS:
   $$\min \text{Latency} \quad \text{s.t.} \quad R_0(\text{Swarm}) \le 0, \quad \text{Detection ASR} \ge 95\%, \quad \text{False Positive Rate} \le 2\%$$
 
 ---
 
-# Card 4: Scope & Feasibility Study (7-Vector Evaluation)
+# Card 4: Scope and Feasibility study
 
-[Layout: 2-Column Split | Left: Project Scope | Right: Feasibility Matrix]
+[Layout: 2-Column Split | sample.pptx Prompts: Overview of scope + Possible Shortcomings/Challenges & Feasibility]
 
-### Project Scope & Boundaries
+### Overview of Project Scope & Challenges
 * **In-Scope Topologies:**
   1. *Sequential Chains ($A \to B \to C$):* Supply-chain cumulative poisoning.
   2. *Peer Mesh Networks:* Horizontal epidemic diffusion via gossip protocols.
   3. *Agent Marketplaces:* Third-party untrusted tool and skill integration.
-* **Threats Covered:** Mind Viruses ($R_0$), Crescendo multi-turn drift, TAP decision-tree attacks, AutoInject RL suffixes, and InjecAgent indirect injections.
-* **Out-of-Scope:** Hardware fault attacks, OS kernel exploits, pre-training LLMs from scratch.
-* **The Guardrail Curse:** Heavy LLM judges introduce 2–5s latency per message, paralyzing real-time agent swarms.
+* **Threat Vectors Covered:** Mind Viruses ($R_0$), Crescendo multi-turn drift, TAP decision-tree attacks, AutoInject RL suffixes, and InjecAgent indirect injections.
+* **Out-of-Scope:** Hardware-level side-channel attacks, OS kernel exploits, pre-training foundation LLMs from scratch.
+* **Shortcomings & Challenges (The Guardrail Curse):** Monolithic LLM judges add 2–5s latency per inter-agent message, paralyzing real-time agent swarms.
 
-### 7-Vector Feasibility Study (Final PPT Model)
-| Vector | Resource Availability & Feasibility Status |
-| :--- | :--- |
-| **1. Data** | Open benchmarks: AgentDojo (629 cases), InjecAgent (1,054), BFCL, Anthropic dataset. |
-| **2. Compute** | System-1 runs on commodity GPUs / edge APIs (Cloudflare, TypeSafe); local quantized System-2. |
-| **3. Hardware** | Pre-trained models ready: Clef, Clef-flash, Jev, Kev 9B, Llama-3-8B. Isolated via Docker. |
-| **4. Skills** | Established team proficiency in Python, PyTorch, LangGraph, agent state machines. |
-| **5. Tools** | Stack: `vLLM`, `AgentDojo`, `NeMo-Guardrails`, `FastAPI`, `Streamlit`, Model Context Protocol (MCP). |
-| **6. Time** | 16-week structured multi-semester timeline with bi-weekly test-driven milestones. |
-| **7. Risk Control** | Strict virtualized network namespaces, zero external internet egress, mock tool environments. |
+### Feasibility Study for Solving This Problem (7 Vectors)
+| Feasibility Vector | Status & Resource Availability | Risk Control Strategy |
+| :--- | :--- | :--- |
+| **1. Data & Benchmarks** | Open datasets: AgentDojo (629 cases), InjecAgent (1,054), BFCL, Anthropic dataset. | Automated red-teaming (TAP/Crescendo) generates synthetic edge cases. |
+| **2. Compute** | System-1 runs on commodity GPUs / edge APIs (Cloudflare Workers, TypeSafe endpoints). | Offload heavy System-2 audits to local quantized models (Llama-3.3-70B-AWQ). |
+| **3. Hardware & Models** | Pre-trained models available: Clef, Clef-flash, Jev, Kev 9B, Llama-3-8B. | Isolated containerization (Docker) ensures reproducibility. |
+| **4. Skills** | Established team proficiency in Python, PyTorch, LangGraph, agent state machines. | Prior testbed implementations mitigate development risks. |
+| **5. Tools & Libraries** | Stack: `vLLM`, `AgentDojo`, `NeMo-Guardrails`, `FastAPI`, `Streamlit`, MCP SDK. | Fully open-source dependencies with enterprise backing. |
+| **6. Time & Milestones** | 16 weeks structured across Capstone I, II, and III with bi-weekly milestones. | Strict phase gating: Phase I baseline $\to$ Phase II core $\to$ Phase III co-evolution. |
+| **7. Risk Control** | Red-teaming payloads and self-replicating prompts could escape testbeds. | Virtualized network namespaces, zero external internet egress, mock tool envs. |
 
 ---
 
-# Card 5: Background & Consolidated Literature Survey
+# Card 5: Background
 
-[Layout: Top: Domain Background | Bottom: Comparative Literature Table]
+[Layout: Top: Domain Evolution & Context | Bottom: Consolidated Literature Review Table]
 
-### Background: Evolution of AI Security
-* **Gen 1 (2020–22):** Isolated completion engines $\to$ static regex & toxicity filters.
-* **Gen 2 (2023–24):** Retrieval chatbots (RAG) $\to$ perimeter injection classifiers (Llama Guard).
-* **Gen 3 (Current Frontier 2025–26):** **Autonomous Multi-Agent Swarms** acting as both clients and servers to each other, creating cascading lateral vulnerabilities.
+### Why This Problem & Domain Context
+* **Why This Problem:** Shift from Gen 1 (isolated chatbots) to Gen 3 (**Autonomous Multi-Agent Swarms**). Agents are both clients and servers to one another; an unverified payload received by one agent infects downstream actions across the entire enterprise graph.
+* **Domain Context:** Multi-Agent Systems (MAS), Self-Replicating Memes / Mind Viruses ($R_0$), Multi-Turn Semantic Drift (Crescendo), and Non-Autoregressive System-1 vs. Autoregressive System-2 Triage.
 
-### Consolidated Comparative Literature Review (15 Anchor & Peer Papers)
-| Research Pillar | Key Papers & Citations | Core Techniques / Models | Advantages | Critical Limitations |
+### Consolidated Literature Review (15 Anchor & Peer Papers)
+| Research Domain | Key Papers & Citations | Core Techniques / Models | Advantages | Critical Limitations |
 | :--- | :--- | :--- | :--- | :--- |
 | **Viral Propagation & Worms (Threat Actor)** | • Mind Viruses *(Anthropic 2024)*<br>• Morris-II AI Worm *(ACM CCS 2025)*<br>• Prompt Infection *(Lee & Tiwari 2024)* | Epidemiological $R_0$ modeling in MAS; Zero-click RAG/email worm injection payloads. | Mathematical proof that larger models are more susceptible; real-world exploit proof. | Lacks active runtime defense; tested only on synthetic graphs or email tools. |
 | **Multi-Turn Red Teaming (Threat Actor)** | • Crescendo *(USENIX 2024)*<br>• AutoInject / RLredAgent *(ETH 2024)*<br>• TAP & PAIR *(Chao 2023, Mehrotra 2023)* | Conversational semantic drift; Black-box RL policy gradients; Tree-of-Attacks with pruning. | 60%–85%+ ASR bypassing single-turn filters; fully automated adversarial suffix discovery. | High optimization compute; does not model multi-agent lateral message passing. |
@@ -123,25 +131,25 @@
 
 ---
 
-# Card 6: Applications & Real-World Use Cases
+# Card 6: Applications/Use cases
 
-[Layout: 5 Visual Feature Cards Grid | Pattern: Final PPT]
+[Layout: 5 Visual Cards Grid | sample.pptx Prompt: Describe applications and use cases of your project]
 
 ### 1. Enterprise MCP Agent Gateways
-* Mandatory security proxy for enterprise agents consuming third-party **Model Context Protocol (MCP)** servers and SaaS integrations.
+* Acts as a non-bypassable security proxy for enterprise agents consuming third-party **Model Context Protocol (MCP)** servers and SaaS connectors.
 * Validates schemas, enforces least-privilege tokens, and sanitizes untrusted tool returns.
 
 ### 2. Autonomous DevOps CI/CD Swarms
-* Prevents adversarial pull request comments, issues, and tool outputs from hijacking automated test, build, and cloud release swarms.
-* Blocks lateral credential harvesting and unauthorized pipeline modifications.
+* Prevents adversarial pull request comments, issue templates, and poisoned tool outputs from hijacking automated build, test, and release swarms.
+* Eliminates lateral credential harvesting and unauthorized infrastructure configuration drift.
 
 ### 3. Financial & Algorithmic Trading Meshes
-* Enforces semantic invariant bounds across autonomous market-making, sentiment analysis, and order routing agents.
+* Enforces semantic invariant bounds across autonomous market-making, sentiment analysis, and order execution agents.
 * Eliminates cascading market manipulation triggered by poisoned external financial data feeds.
 
 ### 4. Inter-Agency Civic AI Infrastructure (CivicShield Integration)
 * Safeguards multi-department government AI agents (healthcare, taxation, civic records) against lateral privilege escalation.
-* Maintains verifiable cryptographic audit trails for compliance with public privacy regulations.
+* Maintains verifiable cryptographic audit trails for compliance with public data regulations.
 
 ### 5. Constrained Edge Swarms (Robotics & IoT)
 * Deploys sub-50ms System-1 triage directly onto edge compute nodes without cloud latency bottlenecks.
@@ -149,49 +157,49 @@
 
 ---
 
-# Card 7: Expected Deliverables (Phases I, II, and III)
+# Card 7: Expected Deliverables
 
-[Layout: 3-Column Milestone Cards | Pattern: Final PPT]
+[Layout: 3-Column Milestone Cards | sample.pptx Prompts: Capstone-I, Capstone-II, Capstone-III deliverables]
 
-### Capstone Phase I (Review 1 & 2)
-* **D1: MAS Topology Testbed:** Simulation environment (LangGraph) supporting Sequential, Mesh ($N=6$), and Dynamic Marketplace topologies.
-* **D2: Automated Red-Team Engine:** Implementation of Crescendo drift, Tree of Attacks (TAP), and AutoInject RL suffixes.
-* **D3: Baseline Vulnerability Report:** Empirical measurement of baseline infection rate, ASR, and $R_0$ in undefended swarms vs. perimeter baselines.
+### Capstone-I deliverables (Current Phase)
+* **D1: Multi-Agent Benchmark Testbed:** Instrumented simulation environment built on LangGraph supporting Sequential, Mesh ($N=6$), and Dynamic Marketplace topologies.
+* **D2: Automated Adversarial Red-Team Engine:** Implementation of Crescendo drift, Tree of Attacks (TAP), and AutoInject RL suffixes.
+* **D3: Baseline Vulnerability Report:** Empirical measurement of baseline infection rate, ASR, and $R_0$ in undefended swarms vs. perimeter guardrail baselines.
 
-### Capstone Phase II (Capstone II)
-* **D4: System-1 Triage Gate:** High-speed non-autoregressive classifier (**Clef-flash / Jev**) achieving sub-50ms inference and calibrated risk scoring.
-* **D5: System-2 Trajectory Reasoner:** Multi-turn trajectory auditor ($\bigcup_{i=1}^k T_i$) and goal-invariant checker against initial specifications.
-* **D6: Dynamic Containment & HITL:** Real-time quarantine sandbox, credential revocation, and interactive Streamlit supervisor console.
+### Capstone-II deliverables (Next Phase)
+* **D4: High-Speed System-1 Triage Gate:** Lightweight non-autoregressive classifier (**Clef-flash / Jev**) achieving sub-50ms inference and calibrated risk scoring.
+* **D5: System-2 Trajectory Reasoner:** Multi-turn trajectory auditor ($\bigcup_{i=1}^k T_i$) and goal-invariant checker against initial immutable specifications.
+* **D6: Dynamic Containment & HITL Dashboard:** Real-time isolation mechanism (agent quarantine, message dropping, credential revocation) and Streamlit supervisor console.
 
-### Capstone Phase III (Capstone III)
-* **D7: Closed-Loop Co-Evolution:** Continuous feedback loop retraining System-1 decision heads using MLflow model registry.
-* **D8: Full Empirical Benchmark:** Proof of $R_0 < 1$ across all topologies with $>75\%$ latency/cost reduction over LLM judges.
-* **D9: Open-Source Release & Paper:** Production-ready GitHub repository, Dockerized deployment, and conference research publication.
+### Capstone-III deliverables (Final Phase)
+* **D7: Closed-Loop Co-Evolutionary Pipeline:** Continuous retraining of System-1 decision heads using production chat traces via MLflow model registry.
+* **D8: Full Empirical Benchmark Study:** Formal proof of $R_0 < 1$ across all topologies with $>75\%$ latency and compute cost reduction over LLM judges.
+* **D9: Open-Source Release & Research Paper:** Production-ready GitHub repository, Dockerized deployment scripts, and peer-reviewed conference publication.
 
 ---
 
-# Card 8: Project Timeline & Gantt Schedule
+# Card 8: Capstone (Phase-I & Phase-II) Project Timeline
 
-[Layout: Gantt Schedule Table + Responsibility Matrix | Pattern: Final PPT]
+[Layout: Gantt Schedule Table + Responsibility Matrix | sample.pptx Prompts: Timelines, Gantt chart, Individual efforts, Tasks in stages]
 
-| Phase & Milestone Tasks | W1-2 | W3-4 | W5-6 | W7-8 | W9-10 | W11-12 | W13-14 | W15-16 | Team Effort Allocation |
+| Stage & Task Description | W1-2 | W3-4 | W5-6 | W7-8 | W9-10 | W11-12 | W13-14 | W15-16 | Individual Effort Allocation |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **1. Threat Modeling & Lit Taxonomy** | █ | | | | | | | | All Members (Foundation) |
-| **2. MAS Topology Simulator (LangGraph)** | | █ | | | | | | | Neel Chandrakar (Lead) |
-| **3. Automated Red-Team Engine (TAP)** | | | █ | | | | | | Team Collaborators |
-| **4. System-1 Triage Gate (Clef/Jev)** | | | | █ | | | | | Neel Chandrakar (Lead) |
-| **5. System-2 Trajectory Reasoner** | | | | | █ | | | | Team Collaborators |
-| **6. Quarantine & HITL Dashboard** | | | | | | █ | | | Team Collaborators |
-| **7. Co-Evolutionary Loop (MLflow)** | | | | | | | █ | | Neel Chandrakar (Lead) |
-| **8. Benchmarks, Validation & Paper** | | | | | | | | █ | All Members (Publication) |
+| **Stage 1: Threat Modeling & Lit Taxonomy** | █ | | | | | | | | All Members (Baseline Research) |
+| **Stage 2: MAS Topology Testbed (LangGraph)** | | █ | | | | | | | Neel Chandrakar (Testbed Architecture) |
+| **Stage 3: Automated Red-Team Engine (TAP)** | | | █ | | | | | | Team Collaborators (Attack Harness) |
+| **Stage 4: System-1 Triage Gate (Clef/Jev)** | | | | █ | | | | | Neel Chandrakar (Model Integration) |
+| **Stage 5: System-2 Trajectory Reasoner** | | | | | █ | | | | Team Collaborators (Reasoning Logic) |
+| **Stage 6: Quarantine & HITL Dashboard** | | | | | | █ | | | Team Collaborators (UI & Containment) |
+| **Stage 7: Co-Evolutionary Loop (MLflow)** | | | | | | | █ | | Neel Chandrakar (Training Pipeline) |
+| **Stage 8: Final Benchmarks, Validation & Paper** | | | | | | | | █ | All Members (Dissemination & Defense) |
 
-* **Execution Methodology:** Test-Driven Development (TDD) with bi-weekly sprint reviews; automated CI/CD synchronization via GitHub repository.
+* **Execution Plan:** Test-Driven Development (TDD) with bi-weekly sprint reviews and automated collaborative Git synchronization.
 
 ---
 
-# Card 9: Proposed Architecture & Empirical System-1 Benchmarks
+# Card 9: Any other information
 
-[Layout: 2-Column Visual Media Card | Left: Architecture | Right: Benchmark & Metrics]
+[Layout: 2-Column Split | sample.pptx Prompt: Provide any other information you wish to add on]
 
 > ### 📢 DIRECT SLIDE INSTRUCTIONS FOR GAMMA AI / PPT BUILDER:
 > 1. **Left Container:** Embed [`training_pipeline.jpeg`](file:///Users/neelchandrakar/Desktop/capstone/review_1/ppt/training_pipeline.jpeg)  
@@ -199,22 +207,22 @@
 > 2. **Right Container:** Embed [`system1_benchmark.jpeg`](file:///Users/neelchandrakar/Desktop/capstone/review_1/ppt/system1_benchmark.jpeg)  
 >    `[INSERT_IMAGE: review_1/ppt/system1_benchmark.jpeg]`
 
-### 1. Dual-Plane Active Defense Architecture (`training_pipeline.jpeg`)
+### 1. Proposed Architecture: Closed-Loop Active Defense Pipeline (`training_pipeline.jpeg`)
 * **Production Runtime Plane:** Threat Actor (RED Agent) $\to$ **Defender Model (System-1 Triage)** inspects traffic in ~30–50ms $\to$ safe messages reach **Multi-Agent Application** $\to$ execution logs saved to **DB** $\to$ synced to training plane.
 * **Training & Co-Evolution Plane:** Chat Traces $\to$ Trace Extraction $\to$ **Privacy Filter (Removal of PII)** $\to$ Prepare Training Data $\to$ Model Retraining $\to$ **Model Registry (MLflow)** $\to$ **Publish** updated weights back to Defender Model.
 
-### 2. Empirical Benchmark Takeaways (`system1_benchmark.jpeg`)
-* **Tool Invocation Precision:** **Clef-flash** dominates with **98.76%** on BFCL exact-case and **93.11%** on API-Bank, making it the premier edge gate for validating tool schemas.
+### 2. Empirical System-1 Benchmarks & Key Insights (`system1_benchmark.jpeg`)
+* **Tool Invocation Precision:** **Clef-flash** dominates with **98.76%** on BFCL exact-case and **93.11%** on API-Bank, establishing it as the premier edge gate for validating tool schemas.
 * **Intervention Boundary:** **Jev** leads on When2Call accuracy (**80.97%** vs. Clef's 72.37%), uniquely qualifying it to decide when interactions require System-2 escalation.
 * **Conversational Edge Collapse:** **Laya** fails on complex agent tasks (38.13% BFCL, 11.41% API-Bank, 0.00% Home appliances), proving generic edge conversational models cannot secure agent swarms without specialized tuning.
 
 ---
 
-# Card 10: References, Conclusion & Thank You
+# Card 10: Thank You
 
-[Layout: 2-Column Split | Left: References | Right: Summary & Closing]
+[Layout: 2-Column Split | sample.pptx Closing Slide]
 
-### Formal References (Anchor & Peer Papers)
+### Formal References & Citations
 1. **[Mind Viruses]** Papadopoulos et al. (Anthropic & EPFL, 2024). *`research_papers/papers/`*
 2. **[OpenAI-HF Incident]** OpenAI Security Team. (OpenAI Technical Report, 2024). *`research_papers/technical_reports/`*
 3. **[AutoInject / RLredAgent]** Chen, Debenedetti, et al. (ETH Zürich, 2024). *`research_papers/papers/`*
@@ -230,9 +238,9 @@
 13. **[Llama Guard & NeMo]** Inan et al. (Meta, 2023) & Rebedea et al. (NVIDIA, 2023). *`lit_review/defender_model/`*
 
 ### Project Summary & Takeaways
-* **The Threat:** Autonomous MAS suffers from lateral trust asymmetry; Mind Viruses ($R_0 > 1$) and multi-turn Crescendo drift bypass perimeter defenses.
+* **The Vulnerability:** Autonomous MAS suffers from lateral trust asymmetry; Mind Viruses ($R_0 > 1$) and multi-turn Crescendo drift bypass perimeter defenses.
 * **The Solution:** Our dual-plane closed loop balances **sub-50ms System-1 triage** with **System-2 trajectory verification**, mathematically ensuring $R_0 < 1$ with $>75\%$ cost reduction.
 * **Active Co-Evolution:** Continuous retraining via MLflow guarantees persistent resilience against mutating adversarial strategies.
 
-* **Repository:** Private Git (`PES1UG22CS360 / adaptive-defense-mas`)
-* **Open for Panel Questions.** Thank you!
+* **Project Repository:** Private Git (`PES1UG22CS360 / adaptive-defense-mas`)
+* **Open for Panel Feedback & Questions. Thank you!**
