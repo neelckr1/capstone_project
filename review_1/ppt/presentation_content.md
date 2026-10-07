@@ -39,8 +39,10 @@
 * **Project ID:** *(To be assigned by Capstone Committee)*
 * **Project Guide:** *(Assigned Faculty Guide, Department of CSE, PES University)*
 * **Project Team:**
-  * **Neel Chandrakar** (SRN: PES1UG22CS360, Section 6A)
-  * *(Co-authors / Team Collaborators as per allocation)*
+  * **Neel Chandrakar** (SRN: PES2UG24CS310)
+  * **Pranav Ballebail** (SRN: PES2UG24CS361)
+  * **Pranav Kaushal** (SRN: PES2UG24CS363)
+  * **Pranav Swaroop** (SRN: PES2UG24CS365)
 * **Domain:** AI Security | Multi-Agent Systems (MAS) | Adversarial Robustness | LLM Safety
 * **Institution:** Department of Computer Science and Engineering, PES University, Bengaluru
 
@@ -184,14 +186,14 @@
 
 | Stage & Task Description | W1-2 | W3-4 | W5-6 | W7-8 | W9-10 | W11-12 | W13-14 | W15-16 | Individual Effort Allocation |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Stage 1: Threat Modeling & Lit Taxonomy** | █ | | | | | | | | All Members (Baseline Research) |
+| **Stage 1: Threat Modeling & Lit Taxonomy** | █ | | | | | | | | All Team Members (Joint Foundation) |
 | **Stage 2: MAS Topology Testbed (LangGraph)** | | █ | | | | | | | Neel Chandrakar (Testbed Architecture) |
-| **Stage 3: Automated Red-Team Engine (TAP)** | | | █ | | | | | | Team Collaborators (Attack Harness) |
-| **Stage 4: System-1 Triage Gate (Clef/Jev)** | | | | █ | | | | | Neel Chandrakar (Model Integration) |
-| **Stage 5: System-2 Trajectory Reasoner** | | | | | █ | | | | Team Collaborators (Reasoning Logic) |
-| **Stage 6: Quarantine & HITL Dashboard** | | | | | | █ | | | Team Collaborators (UI & Containment) |
-| **Stage 7: Co-Evolutionary Loop (MLflow)** | | | | | | | █ | | Neel Chandrakar (Training Pipeline) |
-| **Stage 8: Final Benchmarks, Validation & Paper** | | | | | | | | █ | All Members (Dissemination & Defense) |
+| **Stage 3: Automated Red-Team Engine (TAP)** | | | █ | | | | | | Pranav Ballebail (Attack Harness & Fuzzing) |
+| **Stage 4: System-1 Triage Gate (Clef/Jev)** | | | | █ | | | | | Neel Chandrakar (Decision Heads & Triaging) |
+| **Stage 5: System-2 Trajectory Reasoner** | | | | | █ | | | | Pranav Kaushal (Invariant Auditing Engine) |
+| **Stage 6: Quarantine & HITL Dashboard** | | | | | | █ | | | Pranav Swaroop (Containment & Supervisor UI) |
+| **Stage 7: Co-Evolutionary Loop (MLflow)** | | | | | | | █ | | Neel Chandrakar & Pranav Ballebail (Active Retraining) |
+| **Stage 8: Final Benchmarks, Validation & Paper** | | | | | | | | █ | All Team Members (Empirical Defense & Writing) |
 
 * **Execution Plan:** Test-Driven Development (TDD) with bi-weekly sprint reviews and automated collaborative Git synchronization.
 
@@ -242,5 +244,5 @@
 * **The Solution:** Our dual-plane closed loop balances **sub-50ms System-1 triage** with **System-2 trajectory verification**, mathematically ensuring $R_0 < 1$ with $>75\%$ cost reduction.
 * **Active Co-Evolution:** Continuous retraining via MLflow guarantees persistent resilience against mutating adversarial strategies.
 
-* **Project Repository:** Private Git (`PES1UG22CS360 / adaptive-defense-mas`)
+* **Project Repository:** Private Git (`PES2UG24CS310 / adaptive-defense-mas`)
 * **Open for Panel Feedback & Questions. Thank you!**

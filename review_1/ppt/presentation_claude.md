@@ -38,13 +38,15 @@
 * **Project ID:** `[To be assigned by Capstone Committee]`
 * **Project Guide:** `[Assigned Faculty Guide, Department of CSE, PES University]`
 * **Project Team:**
-  * **Neel Chandrakar** (SRN: PES1UG22CS360, Section 6A)
-  * *(Co-authors / Team Collaborators as per allocation)*
+  * **Neel Chandrakar** (SRN: PES2UG24CS310)
+  * **Pranav Ballebail** (SRN: PES2UG24CS361)
+  * **Pranav Kaushal** (SRN: PES2UG24CS363)
+  * **Pranav Swaroop** (SRN: PES2UG24CS365)
 * **Academic Track:** Capstone Project Phase-I (5th/6th Semester, 2026)
 * **Institution:** Department of Computer Science and Engineering, PES University, Bengaluru
 
 ### Verbatim Speaker Notes (Spoken Script):
-> *"Good morning esteemed panel members and faculty guide. I am Neel Chandrakar, and on behalf of my team, I present our Capstone project: 'Adaptive Defense for Multi Agent Systems'. As modern AI transitions from isolated chatbots to interconnected agentic swarms executing privileged real-world tools, inter-agent trust introduces an existential security void. Our project establishes an active, closed-loop immune system combining low-latency System-1 non-autoregressive triage with deep System-2 trajectory auditing to mathematically suppress autonomous viral spread while preserving real-time agent utility."*
+> *"Good morning esteemed panel members and faculty guide. I am Neel Chandrakar, and alongside my team members Pranav Ballebail, Pranav Kaushal, and Pranav Swaroop, we present our Capstone project: 'Adaptive Defense for Multi Agent Systems'. As modern AI transitions from isolated chatbots to interconnected agentic swarms executing privileged real-world tools, inter-agent trust introduces an existential security void. Our project establishes an active, closed-loop immune system combining low-latency System-1 non-autoregressive triage with deep System-2 trajectory auditing to mathematically suppress autonomous viral spread while preserving real-time agent utility."*
 
 ### Anticipated Panel Questions & Bulletproof Answers:
 * **Q: Why focus specifically on multi-agent systems rather than single LLM security?**  
@@ -406,19 +408,19 @@
 ### On-Slide Content:
 | Stage & Task Description | W1-2 | W3-4 | W5-6 | W7-8 | W9-10 | W11-12 | W13-14 | W15-16 | Individual Effort Allocation |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Stage 1: Threat Modeling & Lit Taxonomy** | █ | | | | | | | | All Members (Baseline Research) |
+| **Stage 1: Threat Modeling & Lit Taxonomy** | █ | | | | | | | | All Team Members (Joint Foundation) |
 | **Stage 2: MAS Topology Testbed (LangGraph)** | | █ | | | | | | | Neel Chandrakar (Testbed Architecture) |
-| **Stage 3: Automated Red-Team Engine (TAP)** | | | █ | | | | | | Team Collaborators (Attack Harness) |
-| **Stage 4: System-1 Triage Gate (Clef/Jev)** | | | | █ | | | | | Neel Chandrakar (Model Integration) |
-| **Stage 5: System-2 Trajectory Reasoner** | | | | | █ | | | | Team Collaborators (Reasoning Logic) |
-| **Stage 6: Quarantine & HITL Dashboard** | | | | | | █ | | | Team Collaborators (UI & Containment) |
-| **Stage 7: Co-Evolutionary Loop (MLflow)** | | | | | | | █ | | Neel Chandrakar (Training Pipeline) |
-| **Stage 8: Final Benchmarks, Validation & Paper** | | | | | | | | █ | All Members (Dissemination & Defense) |
+| **Stage 3: Automated Red-Team Engine (TAP)** | | | █ | | | | | | Pranav Ballebail (Attack Harness & Fuzzing) |
+| **Stage 4: System-1 Triage Gate (Clef/Jev)** | | | | █ | | | | | Neel Chandrakar (Decision Heads & Triaging) |
+| **Stage 5: System-2 Trajectory Reasoner** | | | | | █ | | | | Pranav Kaushal (Invariant Auditing Engine) |
+| **Stage 6: Quarantine & HITL Dashboard** | | | | | | █ | | | Pranav Swaroop (Containment & Supervisor UI) |
+| **Stage 7: Co-Evolutionary Loop (MLflow)** | | | | | | | █ | | Neel Chandrakar & Pranav Ballebail (Active Retraining) |
+| **Stage 8: Final Benchmarks, Validation & Paper** | | | | | | | | █ | All Team Members (Empirical Defense & Writing) |
 
 * **Execution Plan:** Test-Driven Development (TDD) with bi-weekly sprint reviews and automated collaborative Git synchronization.
 
 ### Verbatim Speaker Notes (Spoken Script):
-> *"Our 16-week execution plan follows a Test-Driven Development cadence. Tasks are cleanly allocated: Neel leads testbed construction, System-1 integration, and the MLflow co-evolution loop; collaborators lead the red-team attack harness, System-2 trajectory reasoner, and the containment dashboard. Bi-weekly sprint reviews ensure continuous progress and automated Git sync."*
+> *"Our 16-week execution plan follows a Test-Driven Development cadence. Tasks are cleanly allocated across all four team members: Neel leads testbed construction, System-1 triage integration, and the MLflow pipeline; Pranav Ballebail leads the automated red-team attack harness; Pranav Kaushal develops the System-2 trajectory auditor; and Pranav Swaroop builds the quarantine sandbox and human-in-the-loop dashboard. Bi-weekly sprint reviews ensure continuous progress and automated Git synchronization."*
 
 ---
 
@@ -557,7 +559,7 @@
 2. **The Defense Innovation:** Our dual-plane closed loop resolves the Guardrail Curse by harmonizing **sub-50ms System-1 triage (Clef-flash / Jev)** with **System-2 trajectory verification**, mathematically ensuring $R_0 < 1$ with $>75\%$ latency savings.
 3. **Continuous Co-Evolution:** By continuously synchronizing sanitized production chat traces through MLflow to retrain our triage models, the defense maintains active immunity against mutating adversarial strategies.
 
-* **Project Repository:** Private Git (`PES1UG22CS360 / adaptive-defense-mas`)
+* **Project Repository:** Private Git (`PES2UG24CS310 / adaptive-defense-mas`)
 * **Open for Panel Feedback & Questions. Thank you!**
 
 ### Verbatim Speaker Notes (Spoken Script):
