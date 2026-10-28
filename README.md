@@ -96,41 +96,35 @@ The project also measures performance using concepts such as:
 .
 ├── README.md                      # Project overview and AI-readable summary
 ├── AGENTS.md                      # Collaboration and git sync instructions
-├── vision.md                      # Main design/vision document
-├── training_pipeline.jpeg          # Training/defense pipeline diagram
-├── reports/
-│   ├── ai_agent_marketplaces_report.md
-│   └── multi_turn_prompt_injection_report.md
-├── research_papers/              # Key anchor research papers
-│   ├── Mind Viruses- Self-Propagating Ideas in Multi-Agent LLM Systems.pdf
-│   ├── OpenAI-Hugging Face Incident-Technical-Report.pdf
-│   ├── RLredAgent_promptInjection.pdf
-│   └── civic_shield.pdf
-├── lit_review/                   # Supporting literature review materials
-│   ├── README.md
-│   ├── Prompt_Infection_LLM_to_LLM_in_MAS.pdf
-│   ├── Morris_II_AI_Worm_Self_Replicating_Prompts.pdf
-│   ├── Beyond_Single_Model_Injection_Threat_Model_MAS.pdf
-│   ├── Crescendo_Multi_Turn_Jailbreak_Attack.pdf
-│   ├── AgentDojo_Benchmark_Attacks_Defenses_LLM_Agents.pdf
-│   ├── InjecAgent_Benchmarking_Indirect_Prompt_Injections.pdf
-│   ├── PAIR_Jailbreaking_Black_Box_LLMs_Twenty_Queries.pdf
-│   ├── TAP_Tree_of_Attacks_Automated_Jailbreaking.pdf
-│   ├── Multi_Agent_LLM_Defense_Pipeline_Prompt_Injection.pdf
-│   ├── Llama_Guard_Input_Output_Safeguard.pdf
-│   └── NeMo_Guardrails_Toolkit_Safe_LLM_Applications.pdf
-└── review_1/                     # Draft or earlier review artifacts
+├── .gitignore                     # Universal ignore rules (checkpoints, caches, locks)
+│
+├── docs/                          # Project Documentation & Literature
+│   ├── 00-vision/                 # High-level vision and threat landscape (vision.md)
+│   ├── 01-architecture/           # Triaging architecture, pipeline specs & diagrams
+│   ├── 02-literature-review/      # Literature review on threat actors & defender models
+│   ├── 03-research-papers/        # Foundational research papers & technical incident reports
+│   ├── 04-reviews/                # Milestone review decks, presentations & assets
+│   └── 05-reports/                # Weekly progress reports and domain analyses
+│
+├── components/                    # Multi-Tier Defense Codebase
+│   ├── system_1_triage/           # System-1 ingress decision models (ModernBERT, Llama, Clef)
+│   ├── system_2_reasoning/        # System-2 deliberative reasoning & escalation layer
+│   └── red_team/                  # Adversarial multi-turn prompt injection & stress testing
+│
+└── results/                       # Empirical evaluation & benchmark results
+    └── system_1/                  # Benchmark output reports (JSON, metrics)
 ```
 
 ## Recommended Reading Order
 
 For a human or AI agent trying to understand the repo quickly, this is the ideal order:
 
-1. README.md
-2. vision.md
-3. lit_review/README.md
-4. reports/
-5. research_papers/
+1. [README.md](file:///home/student-14/capstone/README.md)
+2. [docs/00-vision/vision.md](file:///home/student-14/capstone/docs/00-vision/vision.md)
+3. [docs/01-architecture/system1_triaging_spec.md](file:///home/student-14/capstone/docs/01-architecture/system1_triaging_spec.md) & [closed_loop_pipeline.md](file:///home/student-14/capstone/docs/01-architecture/closed_loop_pipeline.md)
+4. [docs/02-literature-review/README.md](file:///home/student-14/capstone/docs/02-literature-review/README.md)
+5. [docs/05-reports/](file:///home/student-14/capstone/docs/05-reports/)
+6. [components/system_1_triage/README.md](file:///home/student-14/capstone/components/system_1_triage/README.md)
 
 This order gives the high-level concept first, then the architectural reasoning, then the actual evidence base.
 

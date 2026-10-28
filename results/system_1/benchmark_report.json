@@ -1,0 +1,191 @@
+{
+  "modernbert_encoder": {
+    "model_id": "answerdotai/ModernBERT-large",
+    "model_type": "modernbert_encoder",
+    "classification_metrics": {
+      "total_samples": 48,
+      "true_positives": 27,
+      "true_negatives": 18,
+      "false_positives": 3,
+      "false_negatives": 0,
+      "accuracy": 0.9375,
+      "recall": 1.0,
+      "false_positive_rate": 0.1429,
+      "adversary_bypass_rate": 0.0,
+      "precision": 0.9,
+      "f1_score": 0.9474
+    },
+    "latency_profile": {
+      "count": 48,
+      "min_ms": 5.51,
+      "max_ms": 314.81,
+      "mean_ms": 14.28,
+      "p50_ms": 7.65,
+      "p90_ms": 9.35,
+      "p95_ms": 10.29,
+      "p99_ms": 172.56
+    },
+    "memory_footprint": {
+      "gpu_allocated_mb": 11036.94,
+      "gpu_reserved_mb": 11198.0
+    },
+    "triage_distribution": {
+      "GREEN": 0,
+      "AMBER": 48,
+      "RED": 0
+    },
+    "category_breakdown": {
+      "benign": {
+        "total": 21,
+        "correct": 18,
+        "rate": 0.8571
+      },
+      "system_override_extraction": {
+        "total": 5,
+        "correct": 5,
+        "rate": 1.0
+      },
+      "indirect_tool_poisoning": {
+        "total": 9,
+        "correct": 9,
+        "rate": 1.0
+      },
+      "crescendo_drift": {
+        "total": 6,
+        "correct": 6,
+        "rate": 1.0
+      },
+      "mind_virus": {
+        "total": 7,
+        "correct": 7,
+        "rate": 1.0
+      }
+    }
+  },
+  "llama_1b_decoder": {
+    "model_id": "Qwen/Qwen2.5-1.5B",
+    "model_type": "llama_1b_decoder",
+    "classification_metrics": {
+      "total_samples": 48,
+      "true_positives": 27,
+      "true_negatives": 21,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "accuracy": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "adversary_bypass_rate": 0.0,
+      "precision": 1.0,
+      "f1_score": 1.0
+    },
+    "latency_profile": {
+      "count": 48,
+      "min_ms": 22.93,
+      "max_ms": 202.93,
+      "mean_ms": 28.7,
+      "p50_ms": 25.0,
+      "p90_ms": 26.62,
+      "p95_ms": 27.91,
+      "p99_ms": 120.75
+    },
+    "memory_footprint": {
+      "gpu_allocated_mb": 11036.94,
+      "gpu_reserved_mb": 11222.0
+    },
+    "triage_distribution": {
+      "GREEN": 21,
+      "AMBER": 0,
+      "RED": 27
+    },
+    "category_breakdown": {
+      "benign": {
+        "total": 21,
+        "correct": 21,
+        "rate": 1.0
+      },
+      "system_override_extraction": {
+        "total": 5,
+        "correct": 5,
+        "rate": 1.0
+      },
+      "indirect_tool_poisoning": {
+        "total": 9,
+        "correct": 9,
+        "rate": 1.0
+      },
+      "crescendo_drift": {
+        "total": 6,
+        "correct": 6,
+        "rate": 1.0
+      },
+      "mind_virus": {
+        "total": 7,
+        "correct": 7,
+        "rate": 1.0
+      }
+    }
+  },
+  "clef_joint_schema": {
+    "model_id": "Cloudflare/clef-flash",
+    "model_type": "clef_joint_schema",
+    "classification_metrics": {
+      "total_samples": 48,
+      "true_positives": 21,
+      "true_negatives": 21,
+      "false_positives": 0,
+      "false_negatives": 6,
+      "accuracy": 0.875,
+      "recall": 0.7778,
+      "false_positive_rate": 0.0,
+      "adversary_bypass_rate": 0.2222,
+      "precision": 1.0,
+      "f1_score": 0.875
+    },
+    "latency_profile": {
+      "count": 48,
+      "min_ms": 276.78,
+      "max_ms": 428.12,
+      "mean_ms": 300.2,
+      "p50_ms": 299.34,
+      "p90_ms": 303.48,
+      "p95_ms": 304.72,
+      "p99_ms": 371.17
+    },
+    "memory_footprint": {
+      "gpu_allocated_mb": 11036.94,
+      "gpu_reserved_mb": 11422.0
+    },
+    "triage_distribution": {
+      "GREEN": 25,
+      "AMBER": 5,
+      "RED": 18
+    },
+    "category_breakdown": {
+      "benign": {
+        "total": 21,
+        "correct": 21,
+        "rate": 1.0
+      },
+      "system_override_extraction": {
+        "total": 5,
+        "correct": 5,
+        "rate": 1.0
+      },
+      "indirect_tool_poisoning": {
+        "total": 9,
+        "correct": 9,
+        "rate": 1.0
+      },
+      "crescendo_drift": {
+        "total": 6,
+        "correct": 0,
+        "rate": 0.0
+      },
+      "mind_virus": {
+        "total": 7,
+        "correct": 7,
+        "rate": 1.0
+      }
+    }
+  }
+}

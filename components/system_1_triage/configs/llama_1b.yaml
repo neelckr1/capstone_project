@@ -1,0 +1,29 @@
+# Llama-3.2-1B-Instruct LoRA Configuration for System-1 Long-Context Auditing
+model:
+  model_id: "meta-llama/Llama-3.2-1B-Instruct"
+  model_type: "llama_1b"
+  architecture: "causal_decoder_slm"
+  num_labels: 2
+  max_sequence_length: 32768
+  max_turns: 20
+
+peft:
+  method: "lora"
+  r: 32
+  lora_alpha: 64
+  lora_dropout: 0.05
+  target_modules: ["q_proj", "k_proj", "v_proj", "o_proj"]
+  task_type: "SEQ_CLS"
+
+training:
+  batch_size: 8
+  gradient_accumulation_steps: 2
+  learning_rate: 1.0e-4
+  num_train_epochs: 3
+  weight_decay: 0.01
+  precision: "bf16"
+
+hardware:
+  device: "cuda"
+  target_gpu: "NVIDIA GB10"
+  max_memory_allocated_mb: 5000

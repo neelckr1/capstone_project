@@ -23,7 +23,7 @@
 
 The weekly progress and architectural deliverables have been submitted for faculty review and institutional verification:
 
-![PESU Logo / Mentor Digital Signature](../WhatsApp Image 2026-10-26 at 14.33.47.jpeg)
+![PESU Logo / Mentor Digital Signature](../assets/mentor_signature.jpeg)
 
 *Institutional Verification Stamp: Department of Computer Science and Engineering, PES University.*
 

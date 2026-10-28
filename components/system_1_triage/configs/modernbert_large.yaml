@@ -1,0 +1,22 @@
+# ModernBERT-large Configuration for System-1 Ingress Triaging
+model:
+  model_id: "answerdotai/ModernBERT-large"
+  model_type: "modernbert"
+  architecture: "bidirectional_encoder"
+  num_labels: 2
+  max_sequence_length: 8192
+  max_turns: 8
+
+training:
+  batch_size: 16
+  learning_rate: 2.0e-5
+  num_train_epochs: 3
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  precision: "bf16"
+  optimizer: "adamw_torch"
+
+hardware:
+  device: "cuda"
+  target_gpu: "NVIDIA GB10"
+  max_memory_allocated_mb: 4000
