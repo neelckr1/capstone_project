@@ -106,7 +106,7 @@ The project also measures performance using concepts such as:
 │   ├── 04-reviews/                # Milestone review decks, presentations & assets
 │   ├── 05-reports/                # Weekly progress reports and domain analyses
 │   ├── 06-guide/                  # Post-mortems, practical engineering guides & tutorials
-│   └── plan/                      # PoC plans, execution roadmaps & red-team experiment designs
+│   └── 07-plan/                   # PoC plans, execution roadmaps & red-team experiment designs
 │
 ├── components/                    # Multi-Tier Defense Codebase
 │   ├── system_1_triage/           # System-1 ingress decision models (ModernBERT, Llama, Clef)
