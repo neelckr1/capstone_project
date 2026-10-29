@@ -114,7 +114,8 @@ The project also measures performance using concepts such as:
 │   └── red_team/                  # Adversarial multi-turn prompt injection & stress testing
 │
 └── results/                       # Empirical evaluation & benchmark results
-    └── system_1/                  # Benchmark output reports (JSON, metrics)
+    ├── system_1/                  # Benchmark output reports (JSON, metrics)
+    └── red_team/                  # Mind virus propagation benchmark results (JSON)
 ```
 
 ## Recommended Reading Order
