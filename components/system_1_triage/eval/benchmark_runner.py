@@ -9,9 +9,14 @@ Executes standardized evaluation of ModernBERT-large, Llama-3.2-1B, and Clef-Fla
 """
 
 import os
+import sys
 import json
 import argparse
 from typing import List, Dict, Any
+
+# Ensure project root is in python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from core.schema import TrajectorySample, AttackCategory, TriageAction
 from data.dataset_builder import DatasetBuilder
 from eval.metrics import compute_classification_metrics, compute_latency_percentiles

@@ -2,19 +2,40 @@
 
 Supports:
 - ModernBERT-large (Full parameter sequence classification)
-- Llama-3.2-1B-Instruct (LoRA Rank 32 BF16 sequence classification)
+- Llama-3.2-1B-Instruct / Qwen2.5-1.5B (Regularized LoRA Rank 8 BF16 sequence classification)
 - Clef-Flash 9B (QLoRA 4-bit NF4 schema classification)
 - Continuous active VRAM and host memory monitoring to prevent multi-tenant OOM
+- Circuit Breaker Early Stopping Callbacks to halt on loss collapse or memorization
 """
 
 import os
+import sys
 import json
 import time
 import argparse
 from typing import Dict, Any, List, Optional
+
+# Ensure project root is in python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import torch
 from core.schema import TrajectorySample, AttackCategory
 from core.tokenizer_utils import format_trajectory_to_text, apply_sliding_window
+from transformers import TrainerCallback
+
+
+class CircuitBreakerTripwireCallback(TrainerCallback):
+    """Halts training if evaluation loss collapses (< 0.005) or exhibits premature memorization."""
+
+    def on_evaluate(self, args, state, control, metrics, **kwargs):
+        eval_loss = metrics.get("eval_loss")
+        if eval_loss is not None:
+            if eval_loss < 0.005 and state.epoch <= 2.0:
+                print(
+                    f"\n[CIRCUIT BREAKER ALERT] Premature loss collapse detected at epoch {state.epoch:.1f} "
+                    f"(eval_loss = {eval_loss:.6f} < 0.005 threshold). Halting training to prevent memorization!"
+                )
+                control.should_training_stop = True
 
 
 class SystemOneTrainer:
@@ -28,7 +49,7 @@ class SystemOneTrainer:
         val_path: str = "data/processed/val.jsonl",
         output_dir: str = "checkpoints",
         batch_size: int = 8,
-        lr: float = 2e-5,
+        lr: Optional[float] = None,
         epochs: int = 3,
         max_seq_len: int = 2048,
         use_bf16: bool = True,
@@ -39,11 +60,6 @@ class SystemOneTrainer:
         self.val_path = val_path
         self.output_dir = os.path.join(output_dir, model_type)
         self.batch_size = batch_size
-        self.lr = lr
-        self.epochs = epochs
-        self.max_seq_len = max_seq_len
-        self.use_bf16 = use_bf16 and torch.cuda.is_available()
-        self.device = device if torch.cuda.is_available() and device == "cuda" else "cpu"
 
         # Model ID mappings
         defaults = {
@@ -52,6 +68,20 @@ class SystemOneTrainer:
             "clef_flash": "Cloudflare/clef-flash",
         }
         self.model_id = model_id or defaults.get(model_type, "answerdotai/ModernBERT-base")
+
+        # Regularized model-specific default learning rates
+        default_lrs = {
+            "modernbert": 2e-5,
+            "llama_1b": 3e-5,
+            "clef_flash": 5e-5,
+        }
+        self.lr = lr if lr is not None else default_lrs.get(model_type, 2e-5)
+
+        self.epochs = epochs
+        self.max_seq_len = max_seq_len
+        self.use_bf16 = use_bf16 and torch.cuda.is_available()
+        self.device = device if torch.cuda.is_available() and device == "cuda" else "cpu"
+
         os.makedirs(self.output_dir, exist_ok=True)
 
     def load_dataset_records(self, path: str) -> List[Dict[str, Any]]:
@@ -86,7 +116,7 @@ class SystemOneTrainer:
             checkpoint_path = os.path.join(self.output_dir, "adapter_model.bin")
             with open(checkpoint_path, "w") as f:
                 f.write("mock_adapter_weights")
-            
+
             return {
                 "status": "success",
                 "model_type": self.model_type,
@@ -100,7 +130,7 @@ class SystemOneTrainer:
         return self._run_live_training(train_data, val_data)
 
     def _run_live_training(self, train_data: List[Dict[str, Any]], val_data: List[Dict[str, Any]]) -> Dict[str, Any]:
-        """Set up transformers Trainer with LoRA/QLoRA."""
+        """Set up transformers Trainer with regularized LoRA/QLoRA and circuit breaker tripwires."""
         from transformers import (
             AutoTokenizer,
             AutoModelForSequenceClassification,
@@ -134,7 +164,13 @@ class SystemOneTrainer:
                 num_labels=2,
                 device_map="auto",
             )
-            lora_config = LoraConfig(r=16, lora_alpha=32, target_modules=["q_proj", "v_proj"], task_type="SEQ_CLS")
+            lora_config = LoraConfig(
+                r=8,
+                lora_alpha=16,
+                lora_dropout=0.15,
+                target_modules=["q_proj", "v_proj"],
+                task_type="SEQ_CLS",
+            )
             model = get_peft_model(base_model, lora_config)
         elif self.model_type == "llama_1b":
             from peft import LoraConfig, get_peft_model
@@ -145,9 +181,11 @@ class SystemOneTrainer:
                 pad_token_id=tokenizer.pad_token_id,
             ).to(self.device)
             base_model.config.pad_token_id = tokenizer.pad_token_id
+            # Regularized LoRA configuration
             lora_config = LoraConfig(
-                r=16,
-                lora_alpha=32,
+                r=8,
+                lora_alpha=16,
+                lora_dropout=0.15,
                 target_modules=["q_proj", "v_proj"],
                 task_type="SEQ_CLS",
                 modules_to_save=["score"],
@@ -167,7 +205,8 @@ class SystemOneTrainer:
             per_device_eval_batch_size=self.batch_size,
             learning_rate=self.lr,
             num_train_epochs=self.epochs,
-            weight_decay=0.01,
+            weight_decay=0.05,
+            label_smoothing_factor=0.1,
             eval_strategy="epoch",
             save_strategy="epoch",
             load_best_model_at_end=True,
@@ -182,6 +221,7 @@ class SystemOneTrainer:
             train_dataset=train_ds,
             eval_dataset=val_ds,
             processing_class=tokenizer,
+            callbacks=[CircuitBreakerTripwireCallback()],
         )
 
         train_result = trainer.train()
@@ -205,7 +245,7 @@ def main():
     parser.add_argument("--model-type", choices=["modernbert", "llama_1b", "clef_flash"], default="modernbert")
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--batch-size", type=int, default=8)
-    parser.add_argument("--lr", type=float, default=2e-5)
+    parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--dry-run", action="store_true", help="Simulate training for CI or fast validation")
     args = parser.parse_args()
 

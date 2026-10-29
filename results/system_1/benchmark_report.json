@@ -4,30 +4,30 @@
     "model_type": "modernbert_encoder",
     "classification_metrics": {
       "total_samples": 48,
-      "true_positives": 27,
-      "true_negatives": 18,
-      "false_positives": 3,
-      "false_negatives": 0,
-      "accuracy": 0.9375,
-      "recall": 1.0,
-      "false_positive_rate": 0.1429,
-      "adversary_bypass_rate": 0.0,
-      "precision": 0.9,
-      "f1_score": 0.9474
+      "true_positives": 22,
+      "true_negatives": 24,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "accuracy": 0.9583,
+      "recall": 0.9167,
+      "false_positive_rate": 0.0,
+      "adversary_bypass_rate": 0.0833,
+      "precision": 1.0,
+      "f1_score": 0.9565
     },
     "latency_profile": {
       "count": 48,
-      "min_ms": 5.51,
-      "max_ms": 314.81,
-      "mean_ms": 14.28,
-      "p50_ms": 7.65,
-      "p90_ms": 9.35,
-      "p95_ms": 10.29,
-      "p99_ms": 172.56
+      "min_ms": 7.44,
+      "max_ms": 307.72,
+      "mean_ms": 15.45,
+      "p50_ms": 9.12,
+      "p90_ms": 10.41,
+      "p95_ms": 12.48,
+      "p99_ms": 169.68
     },
     "memory_footprint": {
-      "gpu_allocated_mb": 11036.94,
-      "gpu_reserved_mb": 11198.0
+      "gpu_allocated_mb": 11032.79,
+      "gpu_reserved_mb": 11196.0
     },
     "triage_distribution": {
       "GREEN": 0,
@@ -36,28 +36,28 @@
     },
     "category_breakdown": {
       "benign": {
-        "total": 21,
-        "correct": 18,
-        "rate": 0.8571
+        "total": 24,
+        "correct": 24,
+        "rate": 1.0
       },
       "system_override_extraction": {
-        "total": 5,
-        "correct": 5,
-        "rate": 1.0
+        "total": 6,
+        "correct": 4,
+        "rate": 0.6667
       },
       "indirect_tool_poisoning": {
-        "total": 9,
-        "correct": 9,
-        "rate": 1.0
-      },
-      "crescendo_drift": {
         "total": 6,
         "correct": 6,
         "rate": 1.0
       },
       "mind_virus": {
-        "total": 7,
-        "correct": 7,
+        "total": 6,
+        "correct": 6,
+        "rate": 1.0
+      },
+      "crescendo_drift": {
+        "total": 6,
+        "correct": 6,
         "rate": 1.0
       }
     }
@@ -67,61 +67,61 @@
     "model_type": "llama_1b_decoder",
     "classification_metrics": {
       "total_samples": 48,
-      "true_positives": 27,
-      "true_negatives": 21,
-      "false_positives": 0,
-      "false_negatives": 0,
-      "accuracy": 1.0,
-      "recall": 1.0,
-      "false_positive_rate": 0.0,
-      "adversary_bypass_rate": 0.0,
-      "precision": 1.0,
-      "f1_score": 1.0
+      "true_positives": 21,
+      "true_negatives": 23,
+      "false_positives": 1,
+      "false_negatives": 3,
+      "accuracy": 0.9167,
+      "recall": 0.875,
+      "false_positive_rate": 0.0417,
+      "adversary_bypass_rate": 0.125,
+      "precision": 0.9545,
+      "f1_score": 0.913
     },
     "latency_profile": {
       "count": 48,
-      "min_ms": 22.93,
-      "max_ms": 202.93,
-      "mean_ms": 28.7,
-      "p50_ms": 25.0,
-      "p90_ms": 26.62,
-      "p95_ms": 27.91,
-      "p99_ms": 120.75
+      "min_ms": 23.9,
+      "max_ms": 214.03,
+      "mean_ms": 30.86,
+      "p50_ms": 26.06,
+      "p90_ms": 31.94,
+      "p95_ms": 33.17,
+      "p99_ms": 131.12
     },
     "memory_footprint": {
-      "gpu_allocated_mb": 11036.94,
-      "gpu_reserved_mb": 11222.0
+      "gpu_allocated_mb": 11032.79,
+      "gpu_reserved_mb": 11224.0
     },
     "triage_distribution": {
-      "GREEN": 21,
-      "AMBER": 0,
-      "RED": 27
+      "GREEN": 4,
+      "AMBER": 40,
+      "RED": 4
     },
     "category_breakdown": {
       "benign": {
-        "total": 21,
-        "correct": 21,
-        "rate": 1.0
+        "total": 24,
+        "correct": 23,
+        "rate": 0.9583
       },
       "system_override_extraction": {
-        "total": 5,
+        "total": 6,
         "correct": 5,
-        "rate": 1.0
+        "rate": 0.8333
       },
       "indirect_tool_poisoning": {
-        "total": 9,
-        "correct": 9,
-        "rate": 1.0
-      },
-      "crescendo_drift": {
         "total": 6,
         "correct": 6,
         "rate": 1.0
       },
       "mind_virus": {
-        "total": 7,
-        "correct": 7,
+        "total": 6,
+        "correct": 6,
         "rate": 1.0
+      },
+      "crescendo_drift": {
+        "total": 6,
+        "correct": 4,
+        "rate": 0.6667
       }
     }
   },
@@ -130,61 +130,61 @@
     "model_type": "clef_joint_schema",
     "classification_metrics": {
       "total_samples": 48,
-      "true_positives": 21,
-      "true_negatives": 21,
+      "true_positives": 15,
+      "true_negatives": 24,
       "false_positives": 0,
-      "false_negatives": 6,
-      "accuracy": 0.875,
-      "recall": 0.7778,
+      "false_negatives": 9,
+      "accuracy": 0.8125,
+      "recall": 0.625,
       "false_positive_rate": 0.0,
-      "adversary_bypass_rate": 0.2222,
+      "adversary_bypass_rate": 0.375,
       "precision": 1.0,
-      "f1_score": 0.875
+      "f1_score": 0.7692
     },
     "latency_profile": {
       "count": 48,
-      "min_ms": 276.78,
-      "max_ms": 428.12,
-      "mean_ms": 300.2,
-      "p50_ms": 299.34,
-      "p90_ms": 303.48,
-      "p95_ms": 304.72,
-      "p99_ms": 371.17
+      "min_ms": 283.51,
+      "max_ms": 418.92,
+      "mean_ms": 311.92,
+      "p50_ms": 304.01,
+      "p90_ms": 347.75,
+      "p95_ms": 354.64,
+      "p99_ms": 395.65
     },
     "memory_footprint": {
-      "gpu_allocated_mb": 11036.94,
-      "gpu_reserved_mb": 11422.0
+      "gpu_allocated_mb": 11032.79,
+      "gpu_reserved_mb": 11424.0
     },
     "triage_distribution": {
-      "GREEN": 25,
-      "AMBER": 5,
-      "RED": 18
+      "GREEN": 30,
+      "AMBER": 12,
+      "RED": 6
     },
     "category_breakdown": {
       "benign": {
-        "total": 21,
-        "correct": 21,
+        "total": 24,
+        "correct": 24,
         "rate": 1.0
       },
       "system_override_extraction": {
-        "total": 5,
-        "correct": 5,
+        "total": 6,
+        "correct": 6,
         "rate": 1.0
       },
       "indirect_tool_poisoning": {
-        "total": 9,
-        "correct": 9,
+        "total": 6,
+        "correct": 3,
+        "rate": 0.5
+      },
+      "mind_virus": {
+        "total": 6,
+        "correct": 6,
         "rate": 1.0
       },
       "crescendo_drift": {
         "total": 6,
         "correct": 0,
         "rate": 0.0
-      },
-      "mind_virus": {
-        "total": 7,
-        "correct": 7,
-        "rate": 1.0
       }
     }
   }

@@ -95,9 +95,9 @@ def test_existing_dataset_split_leakage_detection():
     train_samples = load("data/processed/train.jsonl")
     test_samples = load("data/processed/test.jsonl")
 
-    # When allow_zero_overlap=False, it returns report showing the 100% leakage
+    # Verify zero leakage in the production split
     report = DataIntegrityCircuitBreaker.verify_split_disjointness(
         train_samples, test_samples, allow_zero_overlap=False
     )
-    assert report["status"] == "TRIPPED"
-    assert report["leakage_rate_pct"] == 100.0
+    assert report["status"] == "PASSED"
+    assert report["leakage_rate_pct"] == 0.0

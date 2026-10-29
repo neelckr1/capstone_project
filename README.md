@@ -104,7 +104,9 @@ The project also measures performance using concepts such as:
 │   ├── 02-literature-review/      # Literature review on threat actors & defender models
 │   ├── 03-research-papers/        # Foundational research papers & technical incident reports
 │   ├── 04-reviews/                # Milestone review decks, presentations & assets
-│   └── 05-reports/                # Weekly progress reports and domain analyses
+│   ├── 05-reports/                # Weekly progress reports and domain analyses
+│   ├── 06-guide/                  # Post-mortems, practical engineering guides & tutorials
+│   └── plan/                      # PoC plans, execution roadmaps & red-team experiment designs
 │
 ├── components/                    # Multi-Tier Defense Codebase
 │   ├── system_1_triage/           # System-1 ingress decision models (ModernBERT, Llama, Clef)
@@ -124,7 +126,8 @@ For a human or AI agent trying to understand the repo quickly, this is the ideal
 3. [docs/01-architecture/system1_triaging_spec.md](file:///home/student-14/capstone/docs/01-architecture/system1_triaging_spec.md) & [closed_loop_pipeline.md](file:///home/student-14/capstone/docs/01-architecture/closed_loop_pipeline.md)
 4. [docs/02-literature-review/README.md](file:///home/student-14/capstone/docs/02-literature-review/README.md)
 5. [docs/05-reports/](file:///home/student-14/capstone/docs/05-reports/)
-6. [components/system_1_triage/README.md](file:///home/student-14/capstone/components/system_1_triage/README.md)
+6. [docs/06-guide/README.md](file:///home/student-14/capstone/docs/06-guide/README.md)
+7. [components/system_1_triage/README.md](file:///home/student-14/capstone/components/system_1_triage/README.md)
 
 This order gives the high-level concept first, then the architectural reasoning, then the actual evidence base.
 
