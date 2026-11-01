@@ -15,6 +15,11 @@ This directory contains technical research reports, empirical benchmark findings
    * **Date:** October 29, 2026
    * **Focus:** Root-cause investigation into 100% train-to-test data leakage in synthetic trajectory datasets, remediation via Stratified Group-Disjoint partitioning and developer hard negatives, and GB10 GPU empirical validation of ModernBERT and Qwen2.5-1.5B LoRA models.
 
+3. [**Formulating Black-Box Graph Adversarial Attacks via Group Relative Policy Optimization (GRPO)**](file:///home/student-14/capstone/docs/05-reports/grpo_black_box_graph_attacks_report.md)
+   * **Date:** November 1, 2026
+   * **Focus:** Mathematical formulation and architectural analysis of critic-free Group Relative Policy Optimization (GRPO) for discrete graph adversarial attacks across static GNN APIs and dynamic Multi-Agent System (MAS) communication graphs.
+   * **Key Findings:** Resolves Bellman error compounding and credit assignment failure in discrete graph search spaces via cohort-relative advantage standardization. Identifies multi-agent topological vulnerabilities including instruction laundering and spectral consensus collapse ($\rho(A_{\text{comm}}) \ge 1$), and maps containment strategies via our Two-Tier System-1/System-2 defense.
+
 ---
 
 ## Weekly Status Reports
