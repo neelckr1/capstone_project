@@ -8,6 +8,42 @@ The introduction of Group Relative Policy Optimization (GRPO) demonstrates that 
 
 ---
 
+```mermaid
+flowchart TD
+    subgraph S1["1. Target Input Graph"]
+        G0["Seed Graph G0 (Adjacency A0, Features X)"]
+    end
+
+    subgraph S2["2. Cohort Rollout Generation (Policy pi_theta)"]
+        G0 --> Sampler["Discrete Topology Perturbation Engine\n(Autoregressive GNN / Bilinear Gumbel-Top-k)"]
+        Sampler --> C1["Candidate Topology G'1\n(Budget <= B)"]
+        Sampler --> C2["Candidate Topology G'2\n(Budget <= B)"]
+        Sampler --> CK["Candidate Topology G'K\n(Group Size K)"]
+    end
+
+    subgraph S3["3. Black-Box Query & Composite Evaluation"]
+        C1 & C2 & CK --> BB["Target Black-Box Interface\n(GNN API or Multi-Agent Swarm)"]
+        BB --> Comp["Composite Multi-Objective Evaluation"]
+        Comp --> R_adv["Adversarial Disruption (R_adv)\nMargin Delta or Injection Success"]
+        Comp --> R_stealth["Graph Structural Stealth (R_stealth)\nDegree KS + Homophily + Laplacian Norm"]
+        Comp --> R_budget["L0 Budget Enforcement (R_budget)\nEdge Flip Penalty"]
+        R_adv & R_stealth & R_budget --> ScalarR["Scalar Cohort Rewards: {R_1, R_2, ..., R_K}"]
+    end
+
+    subgraph S4["4. Critic-Free Advantage Standardization"]
+        ScalarR --> Stats["Cohort Statistics\nmu_G = Mean({R_i}), sigma_G = StdDev({R_i})"]
+        Stats --> Adv["Cohort Relative Advantage\nA_i = (R_i - mu_G) / (sigma_G + delta)"]
+    end
+
+    subgraph S5["5. Policy Optimization Step"]
+        Adv --> Loss["Clipped Surrogate Loss + KL Regularization\nJ_Graph-GRPO(theta)"]
+        Loss --> Opt["Policy Update\n(AdamW + Gradient Clipping)"]
+        Opt -.->|"Reference Update (pi_ref)"| Sampler
+    end
+```
+
+---
+
 ## Discrete Black-Box Graph Adversarial Attacks
 
 Attacking graph-structured classifiers requires formulating topological alterations under strict constraints to preserve the underlying semantic identity of the graph [cite: 1, 6]. In node-level, link-level, or graph-level tasks, the target model maps an input graph $G = (\mathcal{V}, \mathcal{E})$ with node feature matrix $X \in \mathbb{R}^{|\mathcal{V}| \times d}$ and binary adjacency matrix $A \in \{0, 1\}^{|\mathcal{V}| \times |\mathcal{V}|}$ to predictions $f(G) \in \mathcal{Y}$ [cite: 6, 7]. The adversarial objective is to construct a perturbed graph $G' = (\mathcal{V}', \mathcal{E}')$ that induces misclassification while maintaining imperceptibility under a budget constraint $\|\Delta E\|_0 \le B$ [cite: 4, 6].
