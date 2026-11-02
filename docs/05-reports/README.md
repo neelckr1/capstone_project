@@ -20,6 +20,11 @@ This directory contains technical research reports, empirical benchmark findings
    * **Focus:** Mathematical formulation and architectural analysis of critic-free Group Relative Policy Optimization (GRPO) for discrete graph adversarial attacks across static GNN APIs and dynamic Multi-Agent System (MAS) communication graphs.
    * **Key Findings:** Resolves Bellman error compounding and credit assignment failure in discrete graph search spaces via cohort-relative advantage standardization. Identifies multi-agent topological vulnerabilities including instruction laundering and spectral consensus collapse ($\rho(A_{\text{comm}}) \ge 1$), and maps containment strategies via our Two-Tier System-1/System-2 defense.
 
+4. [**Beyond Vanilla GRPO: In-Depth Analysis of Modern Critic-Free RL Alternatives and Advancements**](file:///home/student-14/capstone/docs/05-reports/grpo_alternatives_and_evolution_report.md)
+   * **Date:** November 2, 2026
+   * **Focus:** Deep technical research report on post-GRPO critic-free reinforcement learning algorithms (GSPO, RLOO, Dr. GRPO, ReMax, PISmith, DIALTREE), their mathematical divergence from traditional GRPO, and their strategic integration into Phase-II multi-agent red-teaming and topology optimization.
+   * **Key Findings:** Identifies four core failure modes of vanilla GRPO (token-vs-sequence variance in MoEs, 0% ASR cold-start gradient starvation, verbosity/length-bloating bias, and syntax destruction). Recommends GSPO sequence-level likelihood clipping for long chains, RLOO for unbiased post-training, and PISmith with adaptive entropy regularization for adversarial red-agent prompt generation against defended swarms.
+
 ---
 
 ## Weekly Status Reports
