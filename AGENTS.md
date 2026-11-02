@@ -17,3 +17,10 @@ This project has multiple collaborators working simultaneously on the same GitHu
   git commit -m "<concise descriptive message>"
   git push origin "$BRANCH"
   ```
+
+---
+
+## Documentation, Diagram & Pedagogical Standards
+- **Strict Top-Down (TD) Diagrams:** All Mermaid flowcharts and architecture diagrams must use `flowchart TD` or `graph TD` by default, unless a horizontal layout (`LR`) is explicitly superior for a linear chronological sequence.
+- **Beginner-Friendly with High Detail:** The lead researcher is learning advanced RL, discrete graph optimization, and multi-agent systems. Always explain intuitive mental models and demystify jargon before presenting equations, while keeping responses concise, structured, and to the point.
+- **Skill Reference:** See [`.agents/skills/td-diagrams-and-beginner-guidance/SKILL.md`](.agents/skills/td-diagrams-and-beginner-guidance/SKILL.md).

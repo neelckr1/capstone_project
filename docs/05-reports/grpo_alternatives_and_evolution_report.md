@@ -35,7 +35,7 @@ In standard supervised fine-tuning (SFT), a model is taught via fixed demonstrat
 3. The training algorithm compares the score against a reference standard (**Advantage** $A$) and nudges the model's weights to make successful decisions more probable and failed decisions less probable.
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph PPO["1. Traditional Actor-Critic (PPO)"]
         direction TB
         A1["Policy Model\n(Actor: 7B-70B Params)"] --- C1["Value Model\n(Critic: 7B-70B Params)"]
@@ -225,7 +225,7 @@ $$\nabla_\theta \mathcal{J}_{\text{ReMax}} = \sum_{t=1}^{|o_{\text{stoch}}|} \na
 When RL is applied to **automated adversarial red-teaming**—such as generating "Mind Virus" prompt injections or bypassing multi-agent security perimeters—vanilla GRPO fails completely due to domain-specific roadblocks.
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph FAIL["Vanilla GRPO Cold-Start Failure"]
         direction TB
         F1["Attacking Hardened Firewall\n(e.g., System-1 Ingress Gate)"] --> F2["Initial Rollouts: 0% ASR\nAll Rewards R_i = 0"]
